@@ -79,10 +79,10 @@ body {
   transform: rotateX(-90deg) translateZ(50px);
 }
 .left {
-  transform: rotateX(-90deg) translateZ(50px);
+  transform: rotateY(-90deg) translateZ(50px);
 }
 .right {
-  transform: rotateX(90deg) translateZ(50px);
+  transform: rotateY(90deg) translateZ(50px);
 }
 .front::after {
   width: 30px;
@@ -114,4 +114,13 @@ body {
   cursor: pointer;
   color: #388e3c;
   margin-top: 60px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid #388e3c;
+  transition: 0.4ms;
+}
+.roll:hover {
+  color: #fff;
+  background-color: #388e3c;
 }
